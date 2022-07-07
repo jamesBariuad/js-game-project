@@ -9,15 +9,19 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(117, 94, 94);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    filter: brightness(85%);
+    font-size: large;
 }
 
 .container {
-    margin-top: 12.5vh;
-    height: 75vh;
-    width: 75vh;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+    height: 85vh;
+    width: 85vh;
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
-    margin-bottom: 12.5vh;
+    
 
     grid-template-areas: 
         "square1 square2 square3"
@@ -118,6 +122,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    color: rgb(0, 0, 0);
 }
 
 h2{
@@ -149,8 +154,4 @@ sub{
     to {
         box-shadow: 0px 0px 50px 5px #0ff;
     }
-}
-
-body {
-    filter: brightness(90%)
 }
