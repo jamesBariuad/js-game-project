@@ -34,24 +34,28 @@ body {
     grid-area: square1;
     background-color:   #e3342f;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .square2 {
     grid-area: square2;
     background-color: #f6993f;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .square3 {
     grid-area: square3;
     background-color: #ffed4a;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .square4 {
     grid-area: square4;
     background-color: #38c172;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .menu {
@@ -65,6 +69,7 @@ body {
     background-color: inherit;
     color: rgb(255, 255, 255);
     text-align: center;
+    margin: 0.5em;
 }
 
 button {
@@ -76,24 +81,28 @@ button {
     grid-area: square5;
     background-color: #4dc0b5;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .square6 {
     grid-area: square6;
     background-color: #3490dc;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .square7 {
     grid-area: square7;
     background-color: #6574cd;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .square8 {
     grid-area: square8;
     background-color: #9561e2;
     border-radius: 50%;
+    margin: 0.5em;
 }
 
 .overlay {
@@ -156,5 +165,33 @@ sub{
     }
     to {
         box-shadow: 0px 0px 50px 5px #0ff;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 425px) {
+    .titleHowToPlay{
+        padding: 0;
+        font-size: medium;
+    }
+
+    .container{
+      height: 50vh;
+      width: 50vh;
+      margin-top: 50vw;
+        
+    }
+
+    .menu{
+        font-size: small;
+        
+    }
+
+   
+    button{
+        padding: 0.3em;
+    }
+
+    .overlay{
+        height: 100vh;
     }
 }
