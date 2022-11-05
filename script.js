@@ -3,6 +3,14 @@ const titleHowToPlay = document.querySelector(".titleHowToPlay");
 const overlay = document.querySelector(".overlay");
 const howToPlayBtn = document.querySelector(".howToPlayBtn");
 const menu = document.querySelector(".menu");
+const preLoadAudioFilesByPlaying = () =>{
+    for (i=0;i<=7;i++){
+        let audio = new Audio(`/audio/${i+1}.wav`)
+        audio.muted=true
+        audio.play()
+    }
+}
+preLoadAudioFilesByPlaying()
 
 //showing and removing instructions on how to play
 titleHowToPlay.addEventListener("click",close);
@@ -17,6 +25,8 @@ function open(){
     document.body.appendChild(titleHowToPlay);
     document.body.appendChild(overlay);
 }
+
+
 
 
 //create event listener to start game
